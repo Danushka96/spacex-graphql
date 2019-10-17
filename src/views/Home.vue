@@ -1,37 +1,26 @@
 <template>
   <v-row no-gutters>
-    <v-col cols="4" sm="4" style="margin-left:unset;">
-      <!-- <sideNavigation/> -->
+    <v-col cols="12" sm="6" style="margin-left:unset;">
+      <sideNavigation/>
     </v-col>
-    <v-col cols="8" sm="4" style="margin-left:unset;">
-      <!-- <companyDetails/> -->
-      <HelloWorld/>
+    <v-col cols="12" sm="6" style="margin-left:unset;">
+      <companyDetails/>
     </v-col>
   </v-row>
 </template>
 
 <script>
-import { ALL_COMPANY_DETAILS } from "../graphql";
-// import { sideNavigation } from '../components/sideNavigation';
-// import { companyDetails } from '../components/CompanyDetails';
-import { HelloWorld } from '../components/HelloWorld';
+import sideNavigation from '../components/sideNavigation'
+import companyDetails from '../components/CompanyDetails'
 
 export default {
-  name: "Home",
+  name: "App",
   components: {
-    // sideNavigation,
-    // companyDetails,
-    HelloWorld
+    sideNavigation,
+    companyDetails
   },
-  data() {
-    return {
-      company: []
-    };
-  },
-  apollo: {
-    company: {
-      query: ALL_COMPANY_DETAILS
-    }
-  }
+  data: () => ({
+    // 
+  })
 };
 </script>

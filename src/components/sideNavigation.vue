@@ -1,6 +1,5 @@
 <template>
-  <v-row no-gutters>
-    <v-col cols="4" sm="4" style="margin-left:unset;">
+    <v-col cols="12" sm="4" style="margin-left:unset;">
       <v-card height="680" width="256" class="mx-auto my-12" style="margin-left: unset !important;">
         <v-navigation-drawer permanent>
           <v-list-item>
@@ -22,7 +21,6 @@
         </v-navigation-drawer>
       </v-card>
     </v-col>
-  </v-row>
 </template>
 
 <script>
@@ -30,9 +28,30 @@ export default {
   name: "sideNavigation",
   data: () => ({
     items: [
-      { title: "Dashboard", icon: "mdi-view-dashboard" },
-      { title: "Photos", icon: "mdi-image" },
-      { title: "About", icon: "mdi-help-box" }
+      { title: "Company", icon: "mdi-view-dashboard" },
+      { title: "Capsules", icon: "mdi-image" },
+      { title: "cores", icon: "mdi-help-box" },
+      { title: "coresPast", icon: "mdi-help-box" },
+      { title: "coresUpcoming", icon: "mdi-help-box" },
+      { title: "dragons", icon: "mdi-help-box" },
+      { title: "histories", icon: "mdi-help-box" },
+      { title: "landpads", icon: "mdi-help-box" },
+      { title: "launchLatest", icon: "mdi-help-box" },
+      { title: "launchNext", icon: "mdi-help-box" },
+      { title: "launches", icon: "mdi-help-box" },
+      { title: "launchesPast", icon: "mdi-help-box" },
+      { title: "launchesPastResult", icon: "mdi-help-box" },
+      { title: "launchesUpcoming", icon: "mdi-help-box" },
+      { title: "launchpads", icon: "mdi-help-box" },
+      { title: "launchesPast", icon: "mdi-help-box" },
+      { title: "missions", icon: "mdi-help-box" },
+      { title: "missionsResult", icon: "mdi-help-box" },
+      { title: "payloads", icon: "mdi-help-box" },
+      { title: "roadster", icon: "mdi-help-box" },
+      { title: "rockets", icon: "mdi-help-box" },
+      { title: "rocketsResult", icon: "mdi-help-box" },
+      { title: "ships", icon: "mdi-help-box" },
+      { title: "shipsResult", icon: "mdi-help-box" },
     ],
     right: null
   })

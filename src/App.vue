@@ -8,20 +8,18 @@
       <v-spacer></v-spacer>
       <v-btn text href="https://github.com/vuetifyjs/vuetify/releases/latest" target="_blank"></v-btn>
     </v-app-bar>
-    <Home></Home>
+    <router-view></router-view>
   </v-app>
 </template>
 
 <script>
-import Home from './views/Home'
-
 export default {
   name: "App",
   components: {
-    Home
+    // 
   },
   data: () => ({
-    
+    // 
   })
 };
 </script>
