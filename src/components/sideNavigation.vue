@@ -1,5 +1,5 @@
 <template>
-    <v-col cols="12" sm="4" style="margin-left:unset;">
+    <v-col cols="12" sm="12" style="margin-left:unset;">
       <v-card height="680" width="256" class="mx-auto my-12" style="margin-left: unset !important;">
         <v-navigation-drawer permanent>
           <v-list-item>
