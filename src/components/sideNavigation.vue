@@ -28,8 +28,8 @@ export default {
   name: "sideNavigation",
   data: () => ({
     items: [
-      { title: "Company", icon: "mdi-view-dashboard" },
-      { title: "Capsules", icon: "mdi-image" },
+      { title: "company", icon: "mdi-view-dashboard" },
+      { title: "capsules", icon: "mdi-image" },
       { title: "cores", icon: "mdi-help-box" },
       { title: "coresPast", icon: "mdi-help-box" },
       { title: "coresUpcoming", icon: "mdi-help-box" },
@@ -58,6 +58,7 @@ export default {
   methods: {
     setActive(title){
       this.$store.commit('setActiveWindow',title)
+      this.$router.push('/'+title);
     }
   }
 };
