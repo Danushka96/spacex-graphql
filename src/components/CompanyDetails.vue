@@ -1,6 +1,7 @@
 <template>
   <div>
     <h1>Company Details</h1>
+    <p>{{company.summary}}</p>
     <v-form ref="form">
       <v-container>
         <v-row>
@@ -49,18 +50,15 @@
         </v-row>
         <v-row>
           <v-col cols="12" md="6">
-            <v-text-field v-model="company.summary" label="Summary" required></v-text-field>
-          </v-col>
-          <v-col cols="12" md="6">
-            <v-text-field v-model="company.test_sites" label="Test Sites" required></v-text-field>
-          </v-col>
-        </v-row>
-        <v-row>
-          <v-col cols="12" md="6">
             <v-text-field v-model="company.valuation" label="Valuation" required></v-text-field>
           </v-col>
           <v-col cols="12" md="6">
             <v-text-field v-model="company.vehicles" label="Vehicles" required></v-text-field>
+          </v-col>
+        </v-row>
+        <v-row>
+          <v-col cols="12" md="6">
+            <v-text-field v-model="company.test_sites" label="Test Sites" required></v-text-field>
           </v-col>
         </v-row>
         <v-row>

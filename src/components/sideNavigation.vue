@@ -9,7 +9,7 @@
             </v-list-item-content>
           </v-list-item>
           <v-list dense nav>
-            <v-list-item v-for="item in items" :key="item.title" link>
+            <v-list-item v-for="item in items" :key="item.title" link @click="setActive(item.title)">
               <v-list-item-icon>
                 <v-icon>{{ item.icon }}</v-icon>
               </v-list-item-icon>
@@ -54,6 +54,11 @@ export default {
       { title: "shipsResult", icon: "mdi-help-box" },
     ],
     right: null
-  })
+  }),
+  methods: {
+    setActive(title){
+      this.$store.commit('setActiveWindow',title)
+    }
+  }
 };
 </script>

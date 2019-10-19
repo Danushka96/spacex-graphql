@@ -12,12 +12,14 @@
 <script>
 import sideNavigation from '../components/sideNavigation'
 import companyDetails from '../components/CompanyDetails'
+import Capsules from '../components/Capsules'
 
 export default {
   name: "App",
   components: {
     sideNavigation,
-    companyDetails
+    companyDetails,
+    Capsules
   },
   data: () => ({
     // 

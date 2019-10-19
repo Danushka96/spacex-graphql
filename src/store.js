@@ -5,12 +5,17 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
-
+    activeWindow: ''
   },
   mutations: {
-
+    setActiveWindow(state, window){
+      state.activeWindow = window;
+    }
   },
   actions: {
 
+  },
+  getters: {
+    getActiveWindow: state => state.activeWindow
   }
 })
