@@ -43,7 +43,7 @@ export default {
       { title: "launchesPastResult", icon: "mdi-help-box" },
       { title: "launchesUpcoming", icon: "mdi-help-box" },
       { title: "launchpads", icon: "mdi-help-box" },
-      { title: "launchesPast", icon: "mdi-help-box" },
+      // { title: "launchesPast", icon: "mdi-help-box" },
       { title: "missions", icon: "mdi-help-box" },
       { title: "missionsResult", icon: "mdi-help-box" },
       { title: "payloads", icon: "mdi-help-box" },
