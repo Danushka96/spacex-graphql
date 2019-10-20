@@ -42,7 +42,7 @@ export const ALL_CAPSULES_DETAILS = gpl`query{
 
 export function CAPSULE_DETAILS(id){
   return gpl`query{
-    capsule(id: ${id}) {
+    capsule(id: "${id}") {
       dragon {
         active
         crew_capacity

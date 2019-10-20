@@ -25,7 +25,7 @@ export default new Router({
     },
     {
       path: '/capsules/:id',
-      name: 'capsules',
+      name: 'capsule',
       component: Capsule
     }
   ]
