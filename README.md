@@ -1,4 +1,4 @@
-https://cocky-brattain-d7071a.netlify.com
+https://spacex-gql.netlify.com/
 
 # spacex-graphql
 
